@@ -61,7 +61,8 @@ export default {
             if (this.value)
             {
                 console.log('We will send:', this.value[key]);
-                return this.value[key];
+                //return this.value[key];
+                return this.value;
             } else {
                 console.log('The field value is not set!');
 
@@ -136,10 +137,10 @@ export default {
                     this.fetching = false;
                     console.log('We have data:', res.data);
                     this.value = res.data;
+                    //console.log(this.value['cards'])
                     //fieldElement = document.getElementById('client_surname');
                     this.hasdata = true;
                     console.log('Output fields:', this.field.outputFields);
-
 
                     this.field.outputFields.forEach(outputField => {
                         console.log('Lets try to find output field ', outputField.formid);
@@ -147,7 +148,8 @@ export default {
                         console.log('Element is ', fieldElement);
                         valueInPayload = this.returnValue(outputField.jsonkey);
                         console.log('Value in payload is ', valueInPayload);
-                        fieldElement.value = valueInPayload;
+                        fieldElement.value = JSON.stringify(valueInPayload);
+                        //fieldElement.value = valueInPayload;
 
                     });
 
