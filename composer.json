@@ -1,5 +1,5 @@
 {
-    "name": "otrsw/nova-json-field",
+    "name": "imumz/nova-json-field",
     "description": "A Laravel Nova field.",
     "keywords": [
         "laravel",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Otrsw\\NovaJsonField\\": "src/"
+            "Imumz\\NovaJsonField\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Otrsw\\NovaJsonField\\FieldServiceProvider"
+                "Imumz\\NovaJsonField\\FieldServiceProvider"
             ]
         }
     },

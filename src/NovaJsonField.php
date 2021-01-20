@@ -1,6 +1,6 @@
 <?php
 
-namespace Otrsw\NovaJsonField;
+namespace Imumz\NovaJsonField;
 
 use Laravel\Nova\Fields\Field;
 
